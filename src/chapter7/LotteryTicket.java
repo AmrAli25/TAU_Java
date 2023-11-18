@@ -7,7 +7,7 @@ public class LotteryTicket {
     private static final int LENGTH = 6;
     private static final int MAX_TICKET_NUMBER = 69;
 
-    public static void main (String args[]){
+    public static void main (String[] args){
         int[] numbers = generateNumbers();
         Arrays.sort(numbers);
         printNumbers(numbers);
