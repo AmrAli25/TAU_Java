@@ -39,8 +39,8 @@ public class LotteryTicket {
 
     /**
      * Search for a number in the array using sequential search
-     * @param array
-     * @param numToSearchFor
+     * @param array The array that will be searched
+     * @param numToSearchFor the number that we want to search for
      * @return true if found and false if not found
      */
     public static boolean seqSearch(int[]array, int numToSearchFor){
@@ -54,13 +54,10 @@ public class LotteryTicket {
 
     }
 
-    public static boolean binSearch(int[] array, int numToSearchFor){
-        // first array must be sorted
-        Arrays.sort(array);
-        int index = Arrays.binarySearch(array, numToSearchFor);
-        if (index >= 0)
-            return true;
-        else
-            return false;
-    }
+//    public static boolean binSearch(int[] array, int numToSearchFor){
+//        // first array must be sorted
+//        Arrays.sort(array);
+//        int index = Arrays.binarySearch(array, numToSearchFor);
+//        return index >= 0;
+//    }
 }
